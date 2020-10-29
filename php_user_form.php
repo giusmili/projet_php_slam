@@ -16,19 +16,7 @@ $_SESSION["code"]=null;
     <header>
         <h1><?php print title.' version php '.$version ?></h1>
     </header>
-    <!--main-->
-  
-        <!--<p>
-            <a href="https://www.google.com/search?q=css+html">Voir le lien?</a>
-           
-        </p>-->
-        <figure class="theme-secret">
-        <img src="./asset/agent.png" alt="secret">
-            <figcaption>
-                <h2>Saisir votre code?</h2>
-            </figcaption>
-        </figure>
-        <!--formulaire-->
+    
         <?php
     
 
@@ -37,14 +25,21 @@ $_SESSION["code"]=null;
             //print $_SERVER["PHP_SELF"];
         ?>
         <form action="<?php $_SERVER['PHP_SELF'];?>" method="get">
-            <input type="password" name="code" placeholder="Votre code secret" aria-required="true" autofocus>
+            <input type="text" name="nom" placeholder="Votre nom" aria-required="true" autofocus>
+            Femme : <input type="radio" name="genre" value="femme" checked>
+            Homme : <input type="radio" name="genre" value="homme">
+            <select name="pays" id="pays">
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Allemagne">Allemagne</option>
+            </select>
             <input type="submit" value="Envoyer">
         </form>
 
     <section class="theme-response">
         <?php
-        include_once("./src/form.inc.php");
-            //include(), require_once()
+        include_once("./src/validate.inc.php");
+        
 
         ?>
     </section>

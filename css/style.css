@@ -123,7 +123,8 @@ form input{
     padding: 1.0rem;
     font-size: inherit;
 }
-form input[type="password"]{
+form input[type="password"],
+form input[type="text"]{
     border-bottom-color: #ccc;
     border-bottom-width: 0.1rem;
     outline: none;
@@ -133,7 +134,8 @@ form input[type="password"]{
 form input[placeholder]{
     color: #222;
 }
-form input[type="password"]:focus{
+form input[type="password"]:focus,
+form input[type="text"]:focus{
     box-shadow: 0 0 1.0rem #e74c3c;
     
 }
@@ -155,4 +157,23 @@ form input[type="submit"]{
 }
 .theme-response .error::before{
     content: url("../asset/nogood.png");
+}
+form input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+form select{
+    display: block;
+    width: 100%;
+    margin: 1.0rem auto;
+    border: solid 0.1rem #ccc;
+    padding: 1rem;
+    
+}
+form select option{
+    font-size: 1.7rem;
+  
+}
+section .align-text{
+    text-align: left;
 }
