@@ -6,10 +6,10 @@
 
         $myCode = $_GET['code'];
         if($myCode==$_SESSION["code"]){
-        echo '<p> Baravo votre code est '.md5($myCode). '<p>';
+        echo '<p class="success">Bravo votre code est '.md5($myCode). '<p>';
         }
         else{
-            echo '<p>Code error</p>';
+            echo '<p class="error">Code error</p>';
         }
     
        

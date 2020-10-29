@@ -147,3 +147,12 @@ form input[type="submit"]{
    box-shadow: 0 0 0;
    text-align: center;
 }
+.theme-response .success::before, 
+.theme-response .success .error::before{
+    content: url("../asset/good.png");
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+.theme-response .error::before{
+    content: url("../asset/nogood.png");
+}
