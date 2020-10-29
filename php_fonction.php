@@ -1,0 +1,24 @@
+<?php
+    //ici le code
+    include_once("./src/env_php.include.php");
+    include_once("./src/main_header.inc.php");
+ 
+    
+?>
+
+<body>
+    <header>
+        <h1><?php print title.' version php '.$version ?></h1>
+    </header>
+    <!--main-->
+    <?php
+        include_once("./src/printf_fonction.inc.php");
+        //include(), require_once()
+
+    ?>
+    <!--end-->
+    <footer>
+        <p>&copy; - PHP - <?php print date('Y') ?></p>
+    </footer>
+</body>
+</html>
